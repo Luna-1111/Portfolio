@@ -1,0 +1,426 @@
+@font-face{
+    font-family: "one";
+    src:url( "../fnt/Adventure\ Alphabet.ttf;")
+}
+
+@font-face {
+    font-family: "two";
+    src: url(../fnt/MajorMonoDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "trhee";
+    src: url(../fnt/mayanglyphsfill-Regular.ttf);
+}
+
+/*Icons*/
+
+
+/*General*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-size: 0px;
+    font-family:'two';
+
+}
+
+/*Main Header (Logo and Nav)*/
+
+header{
+    background: url(../img/Banner.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name:opacity;
+    animation-duration: 3s;
+}
+
+header h1{
+    margin-top: 100px;
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgb(255, 186, 103);
+    margin-bottom: 30px;
+    animation-name: titleopacity;
+    animation-duration: 3.5s;
+}
+header span{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+    margin-bottom: 100px;
+    
+}
+
+section>#Decoracion{
+    font-family: 'trhee';
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+nav{
+    background-color: rgba(253, 236, 193, 0);
+    height: 10svh;
+    display: flex;
+}
+
+a{
+    color: rgb(217, 255, 255);
+}
+nav a{
+    width: 20%;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    letter-spacing: 1pt;
+    text-align: center;
+    line-height: 40px;
+    animation-name:opacity;
+    animation-duration: 4s;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: rgb(246, 176, 85);
+    height: 200px;
+    display: flex;
+    color: rgb(255, 254, 240);
+    font-size: 1rem;
+    flex-direction: column;
+}
+
+
+footer div{
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#redes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+#redes img{
+    width: 30px;
+    height: 30px;
+}
+
+#opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#opciones a{
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px;
+    color: aliceblue;
+}
+#empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+#empresa h1{
+    font-size: 2rem;
+    text-shadow: rgb(245, 245, 245);
+}
+footer>span{
+    height: 40px;
+    align-self: end;
+    padding: 0 90px;
+    line-height: 5px;
+}
+#arriba{
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 88%;
+    font-size: 3rem;
+    background-color: steelblue;
+}
+
+/*Main section (Información general)*/
+
+.main-section {
+    background-color: white;
+    padding: 20px;
+}
+
+.colored-box {
+    background-color: #ffddaa; 
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 1500px; 
+    margin: 0 auto;
+    position: relative;
+    animation-name:opacity;
+    animation-duration: 4s;
+    animation-delay: 8s;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+    animation-name:opacity;
+    animation-duration: 4s;
+    animation-delay: 9s;
+}
+
+.text {
+    flex: 1;
+    animation-name:opacity;
+    animation-duration: 4s;
+    animation-delay: 10s;
+}
+
+.decorative-bar {
+    background-color: #faac1b; 
+    height: 50px;
+    width: 800px; 
+    position: absolute;
+    bottom: -20px;
+    left: 300px; 
+    animation-name:opacity;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photo {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .decoration-bar{
+        height: 30px;
+        width: 50%; 
+    }
+}
+
+/*Náay section*/
+#Naay {
+    background: url(../img/Banner.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name:opacity;
+    animation-duration: 3s;
+}
+
+.intro-box {
+    background-color: #fcc06c92; 
+    border-radius: 10px;
+}
+
+.intro-box h1{
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgb(255, 186, 103);
+}
+
+.intro-box p {
+    font-size: 1.4rem;
+}
+
+/*Cards section (Hoover animation, mediaQuery*/
+#cards-div{
+    width: 100%;
+}
+#cards-section {
+    padding: 40px 0;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.card-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.container .row {
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/*Section Portfolio*/
+#portfolio-section {
+    background-color: #282c34;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.portfolio-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-box p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+#portfolio-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Keyframes + Extra Media Query*/
+@keyframes opacity{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes titleopacity {
+    0%{opacity: 0%; top:-1000px ;}
+    25%{opacity: 25%;top: -50px; }
+    75%{opacity: 75%; top: -30px;}
+    100%{opacity: 100%; top:100px;}
+}
+
+@media (max-width: 992px) {
+    /* Ajustes para tabletas y dispositivos más pequeños */
+    header h1 {
+        font-size: 5rem; /* Reducir el tamaño del título en tabletas */
+    }
+
+    header span {
+        font-size: 1rem; /* Reducir el tamaño del texto secundario en tabletas */
+    }
+
+    .photo {
+        width: 100%; /* Hacer que la imagen se ajuste al ancho del contenedor en tabletas */
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .decorative-bar {
+        width: 100%; /* Hacer que la barra decorativa ocupe todo el ancho en tabletas */
+        left: 0; /* Alinear la barra decorativa al inicio en tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móviles */
+    header h1 {
+        font-size: 4rem; /* Reducir el tamaño del título en dispositivos móviles */
+    }
+
+    nav {
+        flex-direction: column; /* Cambiar la dirección de navegación a columna en dispositivos móviles */
+    }
+
+    nav a {
+        width: 100%; /* Asegurar que los enlaces ocupen todo el ancho disponible en dispositivos móviles */
+        padding: 10px 0; /* Espaciado interno para los enlaces en dispositivos móviles */
+    }
+}

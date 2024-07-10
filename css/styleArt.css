@@ -1,0 +1,118 @@
+.seccion_dos div{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition:height 3s, width 3s; 
+  }
+
+  .seccion_dos img{
+    position: absolute;
+    width: 180px;
+
+  }
+
+  .Divi1{
+    background-color: rgb(207, 94, 126);
+    top: 70px;
+    left: 30px;
+  }
+  
+
+  .Divi1 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f1{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Garnet{
+    left: -40px;
+  }
+  
+  .Divi1:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi1:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+
+  .Divi2{
+    background-color: rgb(195, 143, 223);
+    top: 450px;
+    left: 30px;
+  }
+  
+
+  .Divi2 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f2{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Amatista{
+    left: -40px;
+  }
+  
+  .Divi2:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi2:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+
+  .Divi3{
+    background-color: rgb(143, 212, 223);
+    top: 830px;
+    left: 30px;
+  }
+  
+
+  .Divi3 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f3{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Perla{
+    left: -40px;
+  }
+  
+  .Divi3:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi3:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+  @keyframes opacity{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+  }
